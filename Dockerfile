@@ -6,6 +6,4 @@ RUN xcaddy build \
 
 FROM caddy:latest
 
-RUN rm -r /data/caddy
-
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
