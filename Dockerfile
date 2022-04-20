@@ -2,7 +2,7 @@ FROM caddy:builder AS builder
 
 RUN xcaddy build \
     --with github.com/jigaowan/caddy-webdav \
-    --with dns.providers.cloudflare
+    --with github.com/caddy-dns/cloudflare
 
 FROM caddy:latest
 
